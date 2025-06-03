@@ -101,6 +101,7 @@ class FFMPEG_VideoWriter:
         # order is important
         cmd = [
             FFMPEG_BINARY,
+            '-hwaccel', 'cuvid',
             "-y",
             "-loglevel",
             "error" if logfile == sp.PIPE else "info",
