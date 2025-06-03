@@ -80,9 +80,9 @@ class FFMPEG_VideoWriter:
         size,
         fps,
         codec="libx264",
-        audiofile=None,
+        audiofile=None
         preset="medium",
-        bitrate=None,
+        bitrate="10000k",
         with_mask=False,
         logfile=None,
         threads=None,
